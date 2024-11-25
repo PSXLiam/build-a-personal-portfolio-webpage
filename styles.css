@@ -96,6 +96,8 @@ h2 {
 }
 
 .project-image {
+  max-width: 40vw;
+  min-width: 225px;
   color: #e4e4e4;
 }
 
