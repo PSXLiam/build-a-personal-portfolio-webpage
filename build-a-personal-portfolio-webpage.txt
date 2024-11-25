@@ -1,0 +1,190 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav id="navbar">
+        <ul>
+          <li>
+            <a class="nav-link" href="#welcome-section">Welcome</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="welcome-section">
+        <h1>Hello, I am Liam Rogers</h1>
+        <p>A programmer who is expanding his knowledge of programming.</p>
+      </section>
+      
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>Here is a bunch of programs I have created:</p>
+        <h3>freeCodeCamp Code</h3>
+        <div id="project-grid" class="HTML-grid">
+          <div class="project-container">
+          <a href="https://github.com/PSXLiam/build-a-survey-form" target="_blank"> 
+            <img class="project-image" src="" alt="Image of my Survey Form."/>
+            <p class="project-tile">Survey Form</p>
+          </a>
+          </div>
+          <div class="project-container">
+          <a href="https://github.com/PSXLiam/build-a-tribute-page" target="_blank"> 
+            <img class="project-image" src="" alt="Image of my Tribute Page."/>
+            <p class="project-tile">Tribute Page</p>
+          </a>
+          </div>
+          <div class="project-container">
+          <a href="https://github.com/PSXLiam/build-a-technical-documentation-page" target="_blank"> 
+            <img class="project-image" src="" alt="Image of my Technical Documentation Page."/>
+            <p class="project-tile">Technical Documentation Page</p>
+          </a>
+          </div>
+          <div class="project-container">
+          <a href="https://github.com/PSXLiam/build-a-product-landing-page" target="_blank"> 
+            <img class="project-image" src="" alt="Image of my Product Landing Page."/>
+            <p class="project-tile">Product Landing Page</p>
+          </a>
+          </div>
+          <p> And, of course, the very page you are viewing now.</p>
+        </div>
+      </section>
+
+      <section id="contacts">
+        <h2>Contacts</h2>
+        <a id="profile-link" href="https://github.com/PSXLiam"  target="_blank">github</a>
+        <a href="https://www.freecodecamp.org/fcc36656f57-b632-4408-aeeb-8f60c597f554"  target="_blank">freeCodeCamp</a>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 440px;
+    background-color:#8bac0f;
+    color: #e4e4e4;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-width: 440px;
+  height: 10%;
+  background-color:#0f380f;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  float: left;
+  font-size: 1.8rem;
+}
+
+li a {
+  color: #ffffff;
+  padding: 16px;
+}
+
+li a:hover{
+  color: #c6c6c6;
+}
+
+section {
+  padding: 30px;
+}
+
+section:first-child {
+  padding-top: 70px;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30vh;
+}
+
+#welcome-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#welcome-section p {
+  font-size: 2rem;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+#projects {
+  background-color:#306230;
+  min-width: 400px;
+}
+
+#project-grid {
+  display: grid;
+  grid-template-columns: 45vw 45vw;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.project-container {
+  border: 1px solid black;
+  max-width: 40vw;
+  min-width: 225px;
+  background-color:#8bac0f;
+}
+
+.project-container a{
+  text-decoration: none;
+}
+
+.project-image {
+  color: #e4e4e4;
+}
+
+@media (max-width: 500px){
+  #project-grid {
+    grid-template-columns: 85vw;
+  }
+
+  .project-container {
+    max-width: 80vw;
+  }
+}
+
+** end of undefined **
+
