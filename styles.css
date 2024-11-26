@@ -85,10 +85,13 @@ h2 {
 }
 
 .project-container {
+  padding: 10px;
   border: 1px solid black;
   max-width: 40vw;
   min-width: 225px;
   background-color:#8bac0f;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .project-container a{
@@ -96,9 +99,9 @@ h2 {
 }
 
 .project-image {
-  max-width: 40vw;
-  min-width: 225px;
-  color: #e4e4e4;
+  max-width: 38vw;
+  min-width: 220px;
+  border: 1px solid black;
 }
 
 @media (max-width: 500px){
